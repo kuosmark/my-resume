@@ -1,7 +1,50 @@
-import React from 'react'
+import React, { Component } from 'react'
 import myImage from './images/me2.jpg'
-import { Container, Image } from 'semantic-ui-react'
+import { Menu, Grid, Container, Image } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+
+class MainMenu extends Component {
+  state = { activeItem: 'whoami' }
+
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name })
+  }
+
+  render() {
+    const activeItem = this.state.activeItem
+
+    return (
+      <Menu stackable inverted /*pointing secondary*/>
+        <Menu.Item
+          name='whoami'
+          as={NavLink}
+          exact to='/'
+          active={activeItem === 'whoami'}
+          content='Who am I?'
+          onClick={this.handleItemClick}
+        />
+
+        <Menu.Item
+          name='skills'
+          as={NavLink}
+          exact to='/skills'
+          active={activeItem === 'skills'}
+          content='Skills'
+          onClick={this.handleItemClick}
+        />
+
+        <Menu.Item
+          name='experience'
+          as={NavLink}
+          exact to='/experience'
+          active={activeItem === 'experience'}
+          content='Experience'
+          onClick={this.handleItemClick}
+        />
+      </Menu>
+    )
+  }
+}
 
 const App = () => {
 
@@ -12,7 +55,7 @@ const App = () => {
       <Router>
         <div>
           <h1 style={style}>Markus Kuosmanen</h1>
-          <LinkMenu />
+          <MainMenu />
           <div>
             <Route exact path='/'
               render={() => <Me />} />
@@ -39,8 +82,29 @@ const Me = () => {
 const Skills = () => {
   return (
     <div>
-      <p>These are my skills.</p>
-    </div>
+      <Grid /*celled*/ divided columns={3}>
+        <Grid.Row>
+        <Grid.Column>
+          <div>1.1</div>
+        </Grid.Column>
+        <Grid.Column>
+          <div>1.2</div>
+        </Grid.Column>
+      </Grid.Row>
+      <Grid.Row>
+        <Grid.Column>
+          <div>2.1</div>
+        </Grid.Column>
+        <Grid.Column>
+          <div>2.2</div>
+        </Grid.Column>
+      </Grid.Row>
+      <Grid.Row>
+      </Grid.Row>
+      <Grid.Row>
+      </Grid.Row>
+      </Grid>
+    </div >
   )
 }
 
@@ -50,30 +114,6 @@ const Experience = () => {
       <p>This is my experience.</p>
     </div>
   )
-}
-
-const LinkMenu = () => {
-
-  const style = {
-    border: 'solid',
-    margin: 10,
-    padding: 10,
-    backgroundColor: 'lightSkyBlue'
-  }
-
-  const activeStyle = { color: 'black' }
-
-  return (
-    <div style={style}>
-      <NavLink exact to='/' activeStyle={activeStyle}>
-        Who am I?</NavLink>&nbsp;
-    <NavLink exact to='/skills' activeStyle={activeStyle}>
-        Skills</NavLink>&nbsp;
-    <NavLink exact to='/experience' activeStyle={activeStyle}>
-        Experience</NavLink>&nbsp;
-    </div>
-  )
-
 }
 
 export default App
