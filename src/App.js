@@ -129,13 +129,16 @@ const Me = () => {
       <p>BIO</p>
       <p>MY LIFE GOALS</p>
       <p>Contact, Intro, Skillset, Job History, Other</p>
+      <em><strong>Personal growth happens outside your comfort zone.</strong></em>
       <Image src={myImage} size={'small'} centered circular bordered />
     </div>
   )
 }
 
 const Mina = () => {
-  return <div>Olen suomalainen.</div>
+  return <div>
+    <p>Olen suomalainen.</p>
+  </div>
 }
 
 const Skills = () => {
