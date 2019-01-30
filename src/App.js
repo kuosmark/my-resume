@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import myImage from './images/me2.jpg'
 import htmlImage from './images/html5.png'
-import { Menu, Grid, Container, Image, Flag } from 'semantic-ui-react'
+import { Menu, Grid, Container, Image, Flag, Icon, Item } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, Redirect, NavLink } from 'react-router-dom'
 
 class App extends Component {
   state = {
-    language: 'en',
+    language: 'fi',
     activeItem: 'whoami'
   }
 
@@ -19,17 +19,17 @@ class App extends Component {
   }
 
   render() {
-    const style = { margin: 10 }
+    const style = { margin: 10, color: 'white' }
     const activeItem = this.state.activeItem
     const language = this.state.language
 
     return (
-      < Container >
+      < Container>
         <Router>
           <div>
             <h1 style={style}>Markus Kuosmanen</h1>
 
-            <Menu stackable inverted /*pointing secondary*/>
+            <Menu stackable fluid widths={5} inverted /*pointing secondary*/>
               <Menu.Item
                 name='whoami'
                 as={NavLink}
@@ -84,6 +84,10 @@ class App extends Component {
               </Menu.Menu>
 
             </Menu >
+
+            <Route exact path='/'
+              render={() => <Redirect to='/fi' />} />
+
             <Route exact path='/en'
               render={() => language === 'en' ? (<Me />) :
                 <Redirect to='/fi' />} />
@@ -124,21 +128,81 @@ class App extends Component {
 
 const Me = () => {
   return (
-    <div>
+    <div style={{ color: 'white' }}>
       <p>My name is Markus.</p>
       <p>BIO</p>
       <p>MY LIFE GOALS</p>
       <p>Contact, Intro, Skillset, Job History, Other</p>
       <em><strong>Personal growth happens outside your comfort zone.</strong></em>
+      <p>Second year computer science student at University of Helsinki.</p>
       <Image src={myImage} size={'small'} centered circular bordered />
     </div>
   )
 }
 
 const Mina = () => {
-  return <div>
-    <p>Olen suomalainen.</p>
-  </div>
+  return <Grid columns='equal'>
+    <Grid.Column >
+      <div style={{ color: 'white' }}>
+        <p>
+          Toisen vuoden tietojenkäsittelytieteen opiskelija Helsingin yliopistossa.
+          Tavoitteena kehittyä ohjelmoijana ja ihmisenä. Positiivinen, innokas oppimaan uutta, ulospäin suuntautunut.
+          En pelkää haasteita, henkilökohtainen kasvu tapahtuu oman mukavuusalueen ulkopuolella.
+          Kielet.
+    </p>
+        <p>mini, tiny, small, large, big, huge, massive</p>
+        <br />
+        <br />
+        <p>Education
+        • University of Helsinki, Computer Science (2017 - 2022)
+        • Työväen Akatemia (2016 - 2017)
+        • Akaan lukio (2012 - 2015)
+
+    Experience
+        • Kaunialan Sairaala Oy (10.04.2017 – 25.07.2017)
+        • Kaunialan Sairaala Oy (25.04.2016 – 31.08.2016)
+        • Koskijakelut Oy (14.06.2014 – 23.07.2014)
+        • Tampereen yliopistollinen sairaala (01.07.2013 – 28.07.2013)
+
+    Languages
+        • Finnish: Mother tongue
+        • Swedish: Mother tongue
+    • English: Fluent</p>
+      </div>
+    </Grid.Column>
+    <Grid.Column>
+      <Grid centered>
+        <Grid.Row>
+          <Grid.Column>
+            <Image src={myImage} size={'medium'} centered circular bordered />
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <Item
+            as='a'
+            href='https://github.com/kuosmark'
+            style={{ color: 'white' }}
+            centered>
+            <Icon
+              name='github'
+              size='huge'
+            />
+          </Item>
+          <div>
+            <p><Icon
+              name='phone'
+              style={{ color: 'white' }} />
+              <strong style={{ color: 'white' }}>+358405569570</strong></p>
+            <p><Icon
+              name='mail'
+              style={{ color: 'white' }}
+            /><strong style={{ color: 'white' }}>markus.kuosmanen@helsinki.fi</strong>
+            </p>
+          </div>
+        </Grid.Row>
+      </Grid>
+    </Grid.Column>
+  </Grid>
 }
 
 const Skills = () => {
