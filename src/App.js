@@ -89,8 +89,6 @@ class App extends Component {
 
           </Menu >
           <br />
-          <br />
-
 
           <Route exact path='/'
             render={() => <Redirect to='/fi' />} />
@@ -140,8 +138,8 @@ const Me = () => {
 
 const Mina = () => {
   return <div>
-    <Grid padded columns='equal'>
-      <Grid.Column>
+    <Grid textAlign='center' columns='equal'>
+      <Grid.Column verticalAlign='middle'>
         <Header padded as='h1'>
           Markus Kuosmanen
              </Header>
