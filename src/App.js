@@ -1,20 +1,22 @@
 import React, { Component } from 'react'
 import myImage from './images/me2.jpg'
 import html from './images/html5.png'
-import css from './images/css3.svg'
+import css from './images/css3.png'
 import java from './images/java.png'
 import junit from './images/junit.png'
 import bash from './images/bash.png'
 import heroku from './images/heroku.png'
 import flask from './images/flask.png'
+import js from './images/js.png'
 import git from './images/git.svg'
 import node from './images/nodejs.png'
-import python from './images/python.svg'
+import python from './images/python.png'
 import react from './images/react.png'
 import redux from './images/redux.png'
 import sqlite from './images/sqlite.svg'
 import mongo from './images/mongodb.png'
 import pgsql from './images/postgresql.png'
+import htmlcss from './images/htmlcss.svg'
 
 import { List, Header, Menu, Grid, Container, Image, Flag, Icon, Item } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, Redirect, NavLink } from 'react-router-dom'
@@ -139,60 +141,78 @@ const Me = () => {
 const Mina = () => {
   return <div>
     <Grid textAlign='center' columns='equal'>
-      <Grid.Column verticalAlign='middle'>
-        <Header padded as='h1'>
-          Markus Kuosmanen
+      <Grid.Row>
+        <Grid.Column verticalAlign='middle'>
+          <Header as='h1'>
+            Markus Kuosmanen
              </Header>
-        <div >
-          <p>
-            Opiskelen toista vuotta tietojenkäsittelytiedettä Helsingin yliopistossa.
-            Tavoittelen käytännön kokemusta alalta hahmottaakseni tulevan urani suuntaa.
-            Positiivisena ulospäinsuuntautuneena järjestöaktiivina en pelkää poistua mukavuusalueeltani.
-            Kielet ja kirjallisuus ovat intohimojani. Kaksikielisyyteni helpottaa uusien kielten omaksumista, tällä hetkellä kehitän espanjan ja japanin kielen taitoani.
+          <div >
+            <p>
+              Opiskelen toista vuotta tietojenkäsittelytiedettä Helsingin yliopistossa.
+              Tavoittelen käytännön kokemusta alalta hahmottaakseni tulevan urani suuntaa.
+              Positiivisena ulospäinsuuntautuneena järjestöaktiivina en pelkää poistua mukavuusalueeltani.
+              Kielet ja kirjallisuus ovat intohimojani. Kaksikielisyyteni helpottaa uusien kielten omaksumista, tällä hetkellä kehitän espanjan ja japanin kielen taitoani.
           </p>
-        </div>
-      </Grid.Column>
-      <Grid.Column>
-        <Grid centered>
-          <Grid.Row>
-            <Grid.Column>
-              <Image src={myImage} size={'medium'} centered circular bordered />
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-            <div>
-              <p><Item
+            <p>
+              <br />
+              <Item
                 as='a'
-                href='https://github.com/kuosmark'
-                style={{ color: 'black' }}
-                centered><Icon
-                  name='github'
-                  size={'huge'}
-                />
-                <strong>github.com/kuosmark</strong>
-              </Item></p>
-              <p>
-                <Item
-                  as='a'
-                  href='mailto:markus.kuosmanen@helsinki.fi'
-                  style={{ color: 'black' }}
-                  centered><Icon
-                    name='mail'
-                    size={'big'}
-                  /><strong >markus.kuosmanen@helsinki.fi</strong>
-                </Item>
+                href='https://www.google.fi/'
+                style={{ color: 'steelblue' }}
+              ><p>
+                  <Icon
+                    name='plane'
+                    size='huge' />
+                  <br />
+                  Tekemäni Travel Tracker -sovellus<br />
+                  (React, Redux, Semantic.ui, Node.js, MongoDB)
               </p>
-              <p><Icon
-                name='phone'
-                size={'big'}
-              />
-                <strong >+358405569570</strong></p>
-            </div>
-          </Grid.Row>
-        </Grid>
-      </Grid.Column>
+              </Item>
+            </p>
+          </div>
+        </Grid.Column>
+        <Grid.Column>
+          <Grid centered>
+            <Grid.Row>
+              <Grid.Column>
+                <Image src={myImage} size={'medium'} centered circular bordered />
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <div>
+                <p><Item
+                  as='a'
+                  href='https://github.com/kuosmark'
+                  style={{ color: 'black' }}
+                ><Icon
+                    name='github'
+                    size={'huge'}
+                  />
+                  <strong>github.com/kuosmark</strong>
+                </Item></p>
+                <p>
+                  <Item
+                    as='a'
+                    href='mailto:markus.kuosmanen@helsinki.fi'
+                    style={{ color: 'black' }}
+                  ><Icon
+                      name='mail'
+                      size={'big'}
+                    /><strong >markus.kuosmanen@helsinki.fi</strong>
+                  </Item>
+                </p>
+                <p><Icon
+                  name='phone'
+                  size={'big'}
+                />
+                  <strong >+358405569570</strong></p>
+              </div>
+            </Grid.Row>
+          </Grid>
+        </Grid.Column>
+      </Grid.Row>
     </Grid >
-  </div>
+  </div >
 }
 
 const Skills = () => {
@@ -223,45 +243,93 @@ const Skills = () => {
 }
 
 const Taidot = () => {
-  return <Grid celled centered verticalAlign='middle' padded relaxed='very' columns='two' divided>
+  return <div><Grid doubling padded celled verticalAlign='middle' columns='two'>
 
-    <Grid.Row>
+    <Grid.Row centered>
       <Grid.Column textAlign='center'>
-        <Image src={java} size={'mini'} />
-        <Image src={python} size={'tiny'} />
-        <Image src={junit} size={'tiny'} />
-        <Image src={sqlite} size={'tiny'} />
-        <Image src={html} size={'tiny'} />
-        <Image src={css} size={'tiny'} />
+
+        <Grid doubling centered verticalAlign='center' columns='two'>
+          <Grid.Row columns={2}>
+            <Grid.Column width={7}>
+              <br />
+              <Image src={java} size={'tiny'} />
+              <br />
+              <Image src={junit} size={'small'} />
+            </Grid.Column>
+            <Grid.Column textAlign='center'>
+              <br />
+              <Image src={python} size={'small'} />
+              <br />
+              <Image src={sqlite} size={'small'} />
+              <br />
+              <Image src={htmlcss} size={'small'} />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+
       </Grid.Column>
-      <Grid.Column textAlign='center'>
+      <Grid.Column width={5} textAlign='center'>
         <p>Kouluprojekteissani ja omissa koodailuissani käytössä ovat olleet Java, Python, Junit, SQLite, HTML ja CSS.</p>
       </Grid.Column>
     </Grid.Row>
-    <Grid.Row>
-      <Grid.Column>
-        <Image src={react} size={'tiny'} />
-        <Image src={redux} size={'tiny'} />
-        <Image src={node} size={'tiny'} />
-        <Image src={mongo} size={'tiny'} />
+
+    <Grid.Row centered>
+      <Grid.Column textAlign='center'>
+
+        <Grid doubling padded centered verticalAlign='center' columns='two'>
+          <Grid.Row columns={2}>
+            <Grid.Column width={7}>
+              <br />
+              <Image src={react} size={'small'} />
+              <br />
+              <Image src={redux} size={'small'} />
+            </Grid.Column>
+            <Grid.Column textAlign='center'>
+              <br />
+              <Image src={node} size={'small'} />
+              <Image src={mongo} size={'medium'} />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+
       </Grid.Column>
-      <Grid.Column>
-        <p>Innostuin web-sovelluskehityksestä käytyäni Full Stack -kurssin.
-Tässä sovelluksessani ovat hyödynnettyinä React, Redux, Node.js ja MongoDB.
+      <Grid.Column width={5} textAlign='center'>
+        <p>        Innostuin web-sovelluskehityksestä käytyäni Full Stack -kurssin.
+          Tässä sovelluksessani ovat hyödynnettyinä React, Redux, Semantic ui, Node.js ja MongoDB.
 </p>
       </Grid.Column>
     </Grid.Row>
-    <Grid.Row>
-      <Grid.Column>
-        <Image src={bash} size={'tiny'} />
-        <Image src={git} size={'tiny'} />
-        <Image src={heroku} size={'tiny'} />
+
+    <Grid.Row centered>
+      <Grid.Column textAlign='center'>
+
+        <Grid doubling padded centered verticalAlign='center' columns='two'>
+          <Grid.Row columns={2}>
+            <Grid.Column width={7}>
+              <br />
+              <Image src={bash} size={'tiny'} />
+              <br />
+              <Image src={git} size={'tiny'} />
+            </Grid.Column>
+            <Grid.Column textAlign='center'>
+              <br />
+              <Image src={heroku} size={'tiny'} />
+              <Image src={heroku} size={'tiny'} />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+
       </Grid.Column>
-      <Grid.Column>
+      <Grid.Column width={5} textAlign='center'>
         <p>Perustaidot Bash ja Git ovat tietojenkäsittelytieteen opiskelijalla päivittäisessä käytössä. Herokua käytän sovellusteni hostaamiseen.</p>
+
       </Grid.Column>
     </Grid.Row>
   </Grid>
+  <br/>
+  <br/>
+  </div>
+  
 }
 
 const Experience = () => {
@@ -275,7 +343,14 @@ const Experience = () => {
 const Kokemus = () => {
   return <Grid relaxed='very' padded centered>
     <Grid.Row>
-      <Header as='h2' icon='user' size='medium' content='Järjestötoiminta' centered />
+      <Header as='h2' icon='fork' size='medium' content='Ohjelmistoprojekti' centered />
+      <p>Kehitimme valmiin ohjelmiston asiakkaan toiveiden mukaan Scrum-projektissa liittyen ohjelmistotuotantokurssiin.
+</p>
+      <br />
+    </Grid.Row>
+
+    <Grid.Row>
+      <Header as='h2' icon='users' size='medium' content='Järjestötoiminta' centered />
       <p>Olen ollut mukana järjestämässä koko yliopiston laajuisia tapahtumia sekä oman ainejärjestöni tapahtumia. Toimin Ylioppilaskunnan tapahtumavaliokunnan varapuheenjohtajana. Lisäksi olen mukana oman ainejärjestöni toiminnassa järjestämässä tapahtumia. Tulen toimimaan tuutorina uusille opiskelijoille tulevana syksynä.
 </p>
       <br />
