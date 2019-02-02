@@ -159,97 +159,75 @@ class App extends Component {
 }
 
 const Bio = ({ english }) => {
-  return <div />
-}
-
-const Skills = ({ english }) => {
-  return <div />
-}
-
-const Experience = ({ english }) => {
-  return <div />
-}
-
-const Mina = () => {
+  const data = english ? DATA.bio.en : DATA.bio.fi
   return (
-    <div>
-      <Grid textAlign='center' columns='equal'>
-        <Grid.Row>
-          <Grid.Column verticalAlign='middle'>
-            <Header as='h1'>Markus Kuosmanen</Header>
+    <Grid textAlign='center' columns='equal'>
+      <Grid.Row>
+        <Grid.Column verticalAlign='middle'>
+          <Header as='h1'>Markus Kuosmanen</Header>
+          <p>{data[0]}</p>
+          <Divider hidden />
+          <Item
+            as='a'
+            href='https://www.google.fi/'
+            style={{ color: 'steelblue' }}>
             <div>
               <p>
-                Opiskelen toista vuotta tietojenkäsittelytiedettä Helsingin
-                yliopistossa. Tavoittelen käytännön kokemusta alalta
-                hahmottaakseni tulevan urani suuntaa. Positiivisena
-                ulospäinsuuntautuneena järjestöaktiivina en pelkää poistua
-                mukavuusalueeltani. Kielet ja kirjallisuus ovat intohimojani.
-                Kaksikielisyyteni helpottaa uusien kielten omaksumista, tällä
-                hetkellä kehitän espanjan ja japanin kielen taitoani.
+                <Icon name='plane' size='huge' />
               </p>
-              <br />
-              <Item
-                as='a'
-                href='https://www.google.fi/'
-                style={{ color: 'steelblue' }}>
-                <div>
-                  <p>
-                    <Icon name='plane' size='huge' />
-                  </p>
-                  <p>Tekemäni Travel Tracker -sovellus</p>
-                  (React, Redux, Semantic.ui, Node.js, MongoDB)
-                </div>
-              </Item>
+              <p>{data[1]}</p>
+              {data[2]}
             </div>
-          </Grid.Column>
-          <Grid.Column>
-            <Grid centered>
-              <Grid.Row>
-                <Grid.Column>
-                  <Image
-                    src={markus}
-                    size={'medium'}
-                    centered
-                    circular
-                    bordered
-                  />
-                </Grid.Column>
-              </Grid.Row>
-              <Grid.Row>
-                <div>
-                  <p>
-                    <Item
-                      as='a'
-                      href='https://github.com/kuosmark'
-                      style={{ color: 'black' }}>
-                      <Icon name='github' size={'huge'} />
-                      <strong>github.com/kuosmark</strong>
-                    </Item>
-                  </p>
-                  <p>
-                    <Item
-                      as='a'
-                      href='mailto:markus.kuosmanen@helsinki.fi'
-                      style={{ color: 'black' }}>
-                      <Icon name='mail' size={'big'} />
-                      <strong>markus.kuosmanen@helsinki.fi</strong>
-                    </Item>
-                  </p>
-                  <p>
-                    <Icon name='phone' size={'big'} />
-                    <strong>+358405569570</strong>
-                  </p>
-                </div>
-              </Grid.Row>
-            </Grid>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </div>
+          </Item>
+        </Grid.Column>
+        <Grid.Column>
+          <Grid centered>
+            <Grid.Row>
+              <Grid.Column>
+                <Image
+                  src={markus}
+                  size={'medium'}
+                  centered
+                  circular
+                  bordered
+                />
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <div>
+                <p>
+                  <Item
+                    as='a'
+                    href='https://github.com/kuosmark'
+                    style={{ color: 'black' }}>
+                    <Icon name='github' size={'huge'} />
+                    <strong>github.com/kuosmark</strong>
+                  </Item>
+                </p>
+                <p>
+                  <Item
+                    as='a'
+                    href='mailto:markus.kuosmanen@helsinki.fi'
+                    style={{ color: 'black' }}>
+                    <Icon name='mail' size={'big'} />
+                    <strong>markus.kuosmanen@helsinki.fi</strong>
+                  </Item>
+                </p>
+                <p>
+                  <Icon name='phone' size={'big'} />
+                  <strong>+358405569570</strong>
+                </p>
+              </div>
+            </Grid.Row>
+          </Grid>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
   )
 }
 
-const Taidot = () => {
+const Skills = ({ english }) => {
+  const data = english ? DATA.skills.en : DATA.skills.fi
   return (
     <div>
       <Grid celled padded verticalAlign='middle' columns='two'>
@@ -276,10 +254,7 @@ const Taidot = () => {
             </Grid>
           </Grid.Column>
           <Grid.Column width={5} textAlign='center'>
-            <p>
-              Kouluprojekteissani ja omissa koodailuissani käytössä ovat olleet
-              Java, Python, Junit, SQLite, HTML ja CSS.
-            </p>
+            <p>{data[0]} </p>
           </Grid.Column>
         </Grid.Row>
 
@@ -301,11 +276,7 @@ const Taidot = () => {
             </Grid>
           </Grid.Column>
           <Grid.Column width={5} textAlign='center'>
-            <p>
-              Innostuin web-sovelluskehityksestä käytyäni Full Stack -kurssin.
-              Tässä sovelluksessani ovat hyödynnettyinä React, Redux, Semantic
-              ui, Node.js ja MongoDB.
-            </p>
+            <p>{data[1]}</p>
           </Grid.Column>
         </Grid.Row>
 
@@ -328,11 +299,7 @@ const Taidot = () => {
             </Grid>
           </Grid.Column>
           <Grid.Column width={5} textAlign='center'>
-            <p>
-              Perustaidot Bash ja Git ovat tietojenkäsittelytieteen
-              opiskelijalla päivittäisessä käytössä. Herokua käytän sovellusteni
-              hostaamiseen.
-            </p>
+            <p>{data[2]} </p>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -343,90 +310,53 @@ const Taidot = () => {
   )
 }
 
-const Kokemus = () => {
+const Experience = ({ english }) => {
+  const data = english ? DATA.skills.en : DATA.skills.fi
   return (
     <div>
       <Grid celled padded verticalAlign='middle' columns='two'>
         <Grid.Row centered>
           <Grid.Column textAlign='center'>
-            <Header
-              as='h2'
-              icon='fork'
-              size='medium'
-              content='Ohjelmistoprojekti'
-            />
+            <Header as='h2' icon='fork' size='medium' content={data[0]} />
           </Grid.Column>
           <Grid.Column width={5} textAlign='center'>
-            <p>
-              Kehitimme valmiin ohjelmiston asiakkaan toiveiden mukaan
-              Scrum-projektissa liittyen ohjelmistotuotantokurssiin.
-            </p>
+            <p>{data[1]}</p>
           </Grid.Column>
         </Grid.Row>
 
         <Grid.Row centered>
           <Grid.Column textAlign='center'>
-            <Header
-              as='h2'
-              icon='users'
-              size='medium'
-              content='Järjestötoiminta'
-            />
+            <Header as='h2' icon='users' size='medium' content={data[2]} />
           </Grid.Column>
           <Grid.Column width={5} textAlign='center'>
-            <p>
-              Olen ollut mukana järjestämässä koko yliopiston laajuisia
-              tapahtumia sekä oman ainejärjestöni tapahtumia. Toimin
-              Ylioppilaskunnan tapahtumavaliokunnan varapuheenjohtajana. Lisäksi
-              olen mukana oman ainejärjestöni toiminnassa järjestämässä
-              tapahtumia. Tulen toimimaan tuutorina uusille opiskelijoille
-              tulevana syksynä.
-            </p>
+            <p>{data[3]}</p>
           </Grid.Column>
         </Grid.Row>
 
         <Grid.Row centered>
           <Grid.Column textAlign='center'>
-            <Header
-              as='h2'
-              icon='heartbeat'
-              size='medium'
-              content='Kaunialan sairaala Oy'
-            />
+            <Header as='h2' icon='heartbeat' size='medium' content={data[4]} />
           </Grid.Column>
           <Grid.Column width={5} textAlign='center'>
-            <p>
-              Kesätyö Kauniaisissa vuosina 2016 ja 2017 osastoapulaisena
-              siivous- ja keittiötehtävissä.
-            </p>
+            <p>{data[5]} </p>
           </Grid.Column>
         </Grid.Row>
 
         <Grid.Row centered>
           <Grid.Column textAlign='center'>
-            <Header
-              as='h2'
-              icon='newspaper'
-              size='medium'
-              content='Koskijakelut Oy'
-            />
+            <Header as='h2' icon='newspaper' size='medium' content={data[6]} />
           </Grid.Column>
           <Grid.Column width={5} textAlign='center'>
-            <p>Kesätyö Pirkanmaalla, lehtienjakelu 2014</p>
+            <p>{data[7]}</p>
           </Grid.Column>
         </Grid.Row>
 
         <Grid.Row centered>
           <Grid.Column textAlign='center'>
-            <Header
-              as='h2'
-              icon='heartbeat'
-              size='medium'
-              content='Tampereen yliopistollinen sairaala'
-            />
+            <Header as='h2' icon='heartbeat' size='medium' content={data[8]} />
           </Grid.Column>
           <Grid.Column width={5} textAlign='center'>
-            <p>Kesätyö Tampereella osastoapulaisena TAYSissa 2013</p>
+            <p>{data[9]}</p>
           </Grid.Column>
         </Grid.Row>
 
@@ -436,11 +366,11 @@ const Kokemus = () => {
               as='h2'
               icon='shopping basket'
               size='medium'
-              content='Pirkanmaan osuuskauppa'
+              content={data[10]}
             />
           </Grid.Column>
           <Grid.Column width={5} textAlign='center'>
-            <p>Kesätyö lähikaupassa 2012</p>
+            <p>{data[11]}</p>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -449,6 +379,56 @@ const Kokemus = () => {
       <Divider hidden />
     </div>
   )
+}
+
+const DATA = {
+  bio: {
+    en: [
+      'I am a student and all that...',
+      'The Travel Tracker application I made',
+      '(React, Redux, Semantic.ui, Node.js, MongoDB)'
+    ],
+    fi: [
+      'Opiskelen toista vuotta tietojenkäsittelytiedettä Helsingin yliopistossa.\
+    Odotan innolla mahdollisuutta kokemusta alalta. saada kokemusta Tavoittelen\
+    käytännön kokemusta alaltahahmottaakseni tulevan urani suuntaa. Positiivisena\
+    ulospäinsuuntautuneena järjestöaktiivina en pelkää poistuamukavuusalueeltani.\
+    Kielet ja kirjallisuus ovat intohimojani.Kaksikielisyyteni helpottaa uusien kielten\
+    omaksumista, tällähetkellä kehitän espanjan ja japanin kielen taitoani.',
+      'Tekemäni Travel Tracker -sovellus',
+      '(React, Redux, Semantic.ui, Node.js, MongoDB)'
+    ]
+  },
+  skills: {
+    en: ['Java,...', 'React,...', 'Bash,...'],
+    fi: [
+      'Kouluprojekteissani ja omissa koodailuissani käytössä ovat olleet Java, Python, Junit, SQLite, HTML ja CSS.',
+      'Innostuin web-sovelluskehityksestä käytyäni Full Stack -kurssin.Tässä sovelluksessani ovat hyödynnettyinä React, Redux, Semanticui, Node.js ja MongoDB.',
+      'Perustaidot Bash ja Git ovat tietojenkäsittelytieteenopiskelijalla päivittäisessä käytössä. Herokua käytän sovellustenihostaamiseen.'
+    ]
+  },
+  experience: {
+    en: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+    fi: [
+      'Ohjelmistoprojekti',
+      'Kehitimme valmiin ohjelmiston asiakkaan toiveiden mukaan Scrum-projektissa liittyen ohjelmistotuotantokurssiin.',
+      'Järjestötoiminta',
+      'Olen ollut mukana järjestämässä koko yliopiston laajuisia\
+      tapahtumia sekä oman ainejärjestöni tapahtumia. Toimin\
+      Ylioppilaskunnan tapahtumavaliokunnan varapuheenjohtajana. Lisäksi\
+      olen mukana oman ainejärjestöni toiminnassa järjestämässä\
+      tapahtumia. Tulen toimimaan tuutorina uusille opiskelijoille\
+      tulevana syksynä.',
+      'Kaunialan sairaala Oy',
+      'Kesätyö Kauniaisissa vuosina 2016 ja 2017 osastoapulaisena siivous- ja keittiötehtävissä.',
+      'Koskijakelut Oy',
+      'Kesätyö Pirkanmaalla, lehtienjakelu 2014',
+      'Tampereen yliopistollinen sairaala',
+      'Kesätyö Tampereella osastoapulaisena TAYSissa 2013',
+      'Pirkanmaan osuuskauppa',
+      'Kesätyö lähikaupassa 2012'
+    ]
+  }
 }
 
 export default App
