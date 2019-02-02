@@ -17,6 +17,7 @@ import sqlite from './images/sqlite.svg'
 import mongo from './images/mongodb.png'
 import pgsql from './images/postgresql.png'
 import htmlcss from './images/htmlcss.svg'
+import travis from './images/travis.png'
 
 import { List, Header, Menu, Grid, Container, Image, Flag, Icon, Item } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, Redirect, NavLink } from 'react-router-dom'
@@ -243,26 +244,27 @@ const Skills = () => {
 }
 
 const Taidot = () => {
-  return <div><Grid doubling padded celled verticalAlign='middle' columns='two'>
+  return <div><Grid padded celled verticalAlign='middle' columns='two' divided>
 
     <Grid.Row centered>
       <Grid.Column textAlign='center'>
 
-        <Grid doubling centered verticalAlign='center' columns='two'>
+        <Grid padded celledcentered verticalAlign='center' columns='two'>
           <Grid.Row columns={2}>
             <Grid.Column width={7}>
               <br />
-              <Image src={java} size={'tiny'} />
+              <Image src={java} size={'tiny'} centered />
               <br />
-              <Image src={junit} size={'small'} />
+              <br />
+              <Image src={junit} size={'small'} centered />
             </Grid.Column>
             <Grid.Column textAlign='center'>
               <br />
-              <Image src={python} size={'small'} />
+              <Image src={python} size={'small'} centered />
               <br />
-              <Image src={sqlite} size={'small'} />
+              <Image src={sqlite} size={'small'} centered />
               <br />
-              <Image src={htmlcss} size={'small'} />
+              <Image src={htmlcss} size={'small'} centered />
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -276,18 +278,17 @@ const Taidot = () => {
     <Grid.Row centered>
       <Grid.Column textAlign='center'>
 
-        <Grid doubling padded centered verticalAlign='center' columns='two'>
+        <Grid padded centered verticalAlign='center' columns='two'>
           <Grid.Row columns={2}>
             <Grid.Column width={7}>
+              <Image src={react} size={'small'} centered />
               <br />
-              <Image src={react} size={'small'} />
               <br />
-              <Image src={redux} size={'small'} />
+              <Image src={redux} size={'small'} centered />
             </Grid.Column>
             <Grid.Column textAlign='center'>
-              <br />
-              <Image src={node} size={'small'} />
-              <Image src={mongo} size={'medium'} />
+              <Image src={node} size={'small'} centered />
+              <Image src={mongo} size={'medium'} centered />
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -303,18 +304,18 @@ const Taidot = () => {
     <Grid.Row centered>
       <Grid.Column textAlign='center'>
 
-        <Grid doubling padded centered verticalAlign='center' columns='two'>
+        <Grid padded centeredcolumns='two'>
           <Grid.Row columns={2}>
             <Grid.Column width={7}>
+              <Image src={bash} size={'small'} centered />
               <br />
-              <Image src={bash} size={'tiny'} />
-              <br />
-              <Image src={git} size={'tiny'} />
+              <Image src={heroku} size={'small'} centered />
             </Grid.Column>
             <Grid.Column textAlign='center'>
+              <Image src={git} size={'small'} centered />
               <br />
-              <Image src={heroku} size={'tiny'} />
-              <Image src={heroku} size={'tiny'} />
+              <br />
+              <Image src={travis} size={'small'} centered />
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -326,10 +327,11 @@ const Taidot = () => {
       </Grid.Column>
     </Grid.Row>
   </Grid>
-  <br/>
-  <br/>
+    <br />
+    <br />
+    <br />
   </div>
-  
+
 }
 
 const Experience = () => {
