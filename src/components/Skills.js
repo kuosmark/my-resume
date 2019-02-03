@@ -3,7 +3,7 @@ import { Container, Grid } from 'semantic-ui-react'
 import AddSkillRow from './AddSkillRow'
 
 const Skills = ({ texts, images }) => (
-  <Container>
+  <Container style={{ fontSize: 'medium' }}>
     <Grid celled columns='equal' verticalAlign='middle'>
       <AddSkillRow
         text={texts[0]}

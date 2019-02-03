@@ -6,7 +6,14 @@ const Texts = {
       '(React, Redux, Semantic.ui, Node.js, MongoDB)'
     ],
     skills: ['Java,...', 'React,...', 'Bash,...'],
-    experience: ['1', '2', '3', '4', '5', '6']
+    experience: [
+      'Software development project',
+      'We developed working software according to client requirements in a six-person Scrum team as part of a software engineering course. During four sprints we became familiar with client meetings, backlog maintenance, retrospectives and other principles of agile development.',
+      'Academic organizations',
+      'I am the vice-chairman of the Events Committee of the Student Union of the University of Helsinki. I participate in organizing events of my own subject organization TKO-äly ry. I will also be tutoring new students this fall.',
+      'Kaunialan hospital',
+      'I worked as an orderly in the summer of 2016 and 2017.'
+    ]
   },
   fi: {
     bio: [
@@ -27,16 +34,11 @@ const Texts = {
     ],
     experience: [
       'Ohjelmistoprojekti',
-      'Kehitimme valmiin ohjelmiston asiakkaan toiveiden mukaan Scrum-projektissa liittyen ohjelmistotuotantokurssiin.',
-      'Järjestötoiminta',
-      'Olen ollut mukana järjestämässä koko yliopiston laajuisia\
-        tapahtumia sekä oman ainejärjestöni tapahtumia. Toimin\
-        Ylioppilaskunnan tapahtumavaliokunnan varapuheenjohtajana. Lisäksi\
-        olen mukana oman ainejärjestöni toiminnassa järjestämässä\
-        tapahtumia. Tulen toimimaan tuutorina uusille opiskelijoille\
-        tulevana syksynä.',
-      'Kaunialan sairaala Oy',
-      'Kesätyö Kauniaisissa vuosina 2016 ja 2017 osastoapulaisena siivous- ja keittiötehtävissä.'
+      'Kehitimme ohjelmistotuotannon kurssilla kuuden hengen Scrum-tiimillä asiakkaan vaatimusten mukaisen ohjelmiston. Neljän sprintin aikana tutuiksi tulivat asiakastapaamiset, backlogin ylläpito, retrospektiivit ja muut ketterän kehittämisen perusteet.',
+      'Opiskelijajärjestöt',
+      'Olen Helsingin yliopiston ylioppilaskunnan tapahtumavaliokunnan varapuheenjohtaja. Osallistun oman ainejärjestöni TKO-äly ry:n tapahtumien järjestämiseen. Lisäksi tulen toimimaan uusien opiskelijoiden tuutorina tulevana syksynä.',
+      'Kaunialan sairaala',
+      'Työskentelin sairaala-apulaisena kesällä 2016 ja 2017.'
     ]
   }
 }

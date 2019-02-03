@@ -3,7 +3,7 @@ import { Container, Grid } from 'semantic-ui-react'
 import AddExperienceRow from './AddExperienceRow'
 
 const Experience = ({ texts }) => (
-  <Container>
+  <Container style={{ fontSize: 'medium' }}>
     <Grid celled verticalAlign='middle' columns={2}>
       <AddExperienceRow
         icon='fork'
