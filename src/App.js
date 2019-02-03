@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Container, Divider } from 'semantic-ui-react'
 import AddMenu from './components/AddMenu'
-import AddRoutes from './components/AddRoutes'
+import AddRouting from './components/AddRouting'
 
 class App extends Component {
   state = {
@@ -19,7 +19,7 @@ class App extends Component {
           <AddMenu en={this.state.english} change={this.changeLanguage} />
           <Divider hidden />
           <Divider hidden />
-          <AddRoutes en={this.state.english} />
+          <AddRouting en={this.state.english} />
           <Divider hidden />
           <Divider hidden />
           <Divider hidden />

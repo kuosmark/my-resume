@@ -8,7 +8,7 @@ const Bio = ({ texts }) => (
       <Header as='h1'>Markus Kuosmanen</Header>
       {texts[0]}
       <Divider hidden />
-      <Item as='a' href='https://www.google.fi/'>
+      <Item as='a' href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
         <Icon name='plane' size='huge' />
         <Container>{texts[1]}</Container>
         {texts[2]}
