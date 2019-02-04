@@ -10,7 +10,7 @@ app
   .get('/data', (req, res) => {
     res.json(data)
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error)
     res.status(500)
   })
@@ -19,7 +19,7 @@ app
   .get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, './build/index.html'))
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error)
     res.status(500)
   })
