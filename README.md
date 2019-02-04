@@ -1,2 +1,2 @@
 # My Resume
-My online resume built using Node.js and React.
+My online resume back-end built using Node.js.
