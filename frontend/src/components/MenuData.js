@@ -8,7 +8,15 @@ const MenuData = {
     'Experience',
     'fi'
   ],
-  fi: ['/bio/fi', 'Minä', '/skills/fi', 'Taidot', '/experience/fi', 'Kokemus', 'gb']
+  fi: [
+    '/bio/fi',
+    'Minä',
+    '/skills/fi',
+    'Taidot',
+    '/experience/fi',
+    'Kokemus',
+    'gb'
+  ]
 }
 
 export default MenuData
