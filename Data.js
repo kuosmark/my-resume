@@ -1,14 +1,14 @@
 const Data = {
   en: {
     bio: [
-      'I am a student and all that...',
+      'If you are looking for a future talent, you have come to the right place. I am a second-year computer science student from the University of Helsinki who has totally got into coding. Besides programming pöhinä has gotten me. Nothing beats challenging yourself in completely new situations, in great company of course. I enjoy living outside my comfort zone. I’m pursuing opportunities to test out my skills. I seek experiences to help me design my future career. I believe in technology and digitalization as means for improving lives. When I was young I wanted to become a doctor. Now I think that a talented programmer can do at least as much good for the world. My passion for language learning originated from my bilingual household. My dream is to be able to have a conversation with as many people as possible. At the moment my main focus is on Spanish and Japanese. I’m going to make 2019 my best year yet!',
       'My Travel Tracker application',
-      '(React, Redux, Semantic.ui, Node.js, MongoDB)'
+      '(React, Redux, Node.js, MongoDB)'
     ],
     skills: [
       'I use Java, Python, HTML and CSS in my studies and own projects. I write JUnit tests and utilize SQL-databases.',
-      'I got excited about web development in my Full Stack course. My applications use use React, Redux, Node.js and MongoDB.',
-      'I have used Git version control in all my software projects. In my largest ones I use Heroku and Travis.'
+      'I got excited about web development in my Full Stack course. My applications use React, Redux, Node.js and MongoDB.',
+      'As a Linux user I daily work with Bash. I use Git version control in all my software projects. My applications also utilize Heroku hosting and Travis integration.'
     ],
     experience: [
       'Software development project',
@@ -21,14 +21,14 @@ const Data = {
   },
   fi: {
     bio: [
-      'Opiskelen tietojenkäsittelytiedettä toista vuotta Helsingin yliopistossa. Odotan innolla mahdollisuutta kokeilla kykyjeni rajoja. Tavoittelen käytännön kokemusta alalta hahmottaakseni tulevan urani suuntaa. Positiivisena, ulospäinsuuntautuneena opiskelijajärjestöaktiivina en pelkää poistua mukavuusalueeltani. Intohimoihini kuuluvat ohjelmointikielten lisäksi myös luonnolliset kielet. Kaksikielisyyteni helpottaa uusien kielten omaksumista. Haastan itseäni espanjan ja japanin opinnoissa.',
+      'Jos etsit tulevaisuuden osaajaa, olet tullut oikeaan paikkaan. Olen koodaukseen hurahtanut toisen vuoden tietojenkäsittelytieteen opiskelija Helsingin yliopistossa. Ohjelmoinnin ohella yliopiston järjestöpöhinä on vienyt mukanaan. Mikään ei voita itsensä haastamista uusissa tilanteissa, tietenkin loistavassa seurassa. En todellakaan pelkää poistua mukavuusalueeltani. Tavoittelen mahdollisuutta kykyjeni testaamiseen. Tavoittelen kokemuksia, joiden kautta hahmottaa tulevan urani suuntaa. Uskon teknologiaan ja digitalisaatioon paremman elämän mahdollistajina. Nuorena halusin lääkäriksi, mutta nykyään ajatellen ohjelmoinnilla voivan tehdä vähintään yhtä paljon hyvää. Kaksikielisessä perheessä kehittyi intohimoni kieltenopiskeluun. Unelmani on pystyä kommunikoimaan mahdollisimman monen ihmisen kanssa. Tällä hetkellä suurimmat tavoitteeni ovat sujuvan japanin ja espanjan kielen oppiminen. Teen vuodesta 2019 parhaan tähän asti!',
       'Tekemäni Travel Tracker -sovellus',
-      '(React, Redux, Semantic.ui, Node.js, MongoDB)'
+      '(React, Redux, Node.js, MongoDB)'
     ],
     skills: [
-      'Opinnoissani ja omissa projekteissani ohjelmoin Javalla, Pythonilla, HTML:ää ja CSS:ää. Kirjoitan JUnit-testejä ja hyödynnän SQL-tietokantoja.',
-      'Innostuin web-sovelluskehityksestä Full Stack -kurssilla. Tekemissäni sovelluksissa on käytössä React, Redux, Node.js ja MongoDB.',
-      'Tietojenkäsittelijän perustaidot ovat hyvässä hallussa. Komentotulkki Bash on päivittäisessä käytössä. Git-versionhallintaa olen käyttänyt kaikissa ohjelmistoprojekteissani. Isommat projektini käyttävät Herokua ja Travisia.'
+      'Käytän Javaa, Pythonia, HTML:ää ja CSS:ää opinnoissani ja omissa projekteissani. Kirjoitan JUnit-testejä ja hyödynnän SQL-tietokantoja.',
+      'Innostuin web-sovelluskehityksestä Full Stack -kurssilla. Sovellukseni käyttävät Reactia, Reduxia, Node.js:ää ja MongoDB:tä.',
+      'Linux-käyttäjänä työskentelen Bashin kanssa päivittäin. Käytän Git-versionhallintaa kaikissa ohjelmistoprojekteissani. Hyödynnän sovelluksissani myös hostauspalvelu Herokua sekä integraatiotyökalu Travisia.'
     ],
     experience: [
       'Ohjelmistoprojekti',
