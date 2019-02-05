@@ -6,17 +6,17 @@ const Data = {
       '(React, Redux, Semantic.ui, Node.js, MongoDB)'
     ],
     skills: [
-      'In my studies I have used Java, Python, HTML, CSS Junit-testing and SQL-databases.',
-      'I got excited about web development on my Full Stack course. In my applications I use React, Redux, Node.js and MongoDB.',
+      'I use Java, Python, HTML and CSS in my studies and own projects. I write JUnit tests and utilize SQL-databases.',
+      'I got excited about web development in my Full Stack course. My applications use use React, Redux, Node.js and MongoDB.',
       'I have used Git version control in all my software projects. In my largest ones I use Heroku and Travis.'
     ],
     experience: [
       'Software development project',
-      'We developed working software according to client requirements in a six-person Scrum team as part of a software engineering course. During four sprints we became familiar with client meetings, backlog maintenance, retrospectives and other principles of agile development.',
+      'We developed working software according to client requirements in a six-person Scrum team as part of a software engineering course. During four sprints I became familiar with client meetings, backlog maintenance, retrospectives and other principles of agile development.',
       'Academic organizations',
-      'I am the vice-chairman of the Events Committee of the Student Union of the University of Helsinki. I participate in organizing events of my own subject organization TKO-äly ry. I will also be tutoring new students this fall.',
-      'Kaunialan hospital',
-      'I worked as an orderly in the summer of 2016 and 2017.'
+      'I am the vice-chairman of the Events Committee of the Student Union of the University of Helsinki this year. I participate in organizing the activity of my subject organization TKO-äly ry. This fall I will also be tutoring the new students of our faculty.',
+      'Kauniala hospital',
+      'I worked as an orderly in the summers of 2016 and 2017.'
     ]
   },
   fi: {
@@ -26,15 +26,15 @@ const Data = {
       '(React, Redux, Semantic.ui, Node.js, MongoDB)'
     ],
     skills: [
-      'Opinnoissani ja omissa projekteissani on käytössäni ollut Java, Python, HTML, CSS, Junit-testaus ja SQL-tietokannat.',
+      'Opinnoissani ja omissa projekteissani ohjelmoin Javalla, Pythonilla, HTML:ää ja CSS:ää. Kirjoitan JUnit-testejä ja hyödynnän SQL-tietokantoja.',
       'Innostuin web-sovelluskehityksestä Full Stack -kurssilla. Tekemissäni sovelluksissa on käytössä React, Redux, Node.js ja MongoDB.',
       'Tietojenkäsittelijän perustaidot ovat hyvässä hallussa. Komentotulkki Bash on päivittäisessä käytössä. Git-versionhallintaa olen käyttänyt kaikissa ohjelmistoprojekteissani. Isommat projektini käyttävät Herokua ja Travisia.'
     ],
     experience: [
       'Ohjelmistoprojekti',
-      'Kehitimme ohjelmistotuotannon kurssilla kuuden hengen Scrum-tiimillä asiakkaan vaatimusten mukaisen ohjelmiston. Neljän sprintin aikana tutuiksi tulivat asiakastapaamiset, backlogin ylläpito, retrospektiivit ja muut ketterän kehittämisen perusteet.',
+      'Kehitimme ohjelmistotuotannon kurssilla kuuden hengen Scrum-tiimillä asiakkaan vaatimusten mukaisen ohjelmiston. Neljän sprintin aikana tutuiksi tulivat asiakastapaamiset, backlogin ylläpito, retrospektiivit ja muut ketterän kehityksen perusteet.',
       'Opiskelijajärjestöt',
-      'Olen Helsingin yliopiston ylioppilaskunnan tapahtumavaliokunnan varapuheenjohtaja. Osallistun oman ainejärjestöni TKO-äly ry:n tapahtumien järjestämiseen. Lisäksi tulen toimimaan uusien opiskelijoiden tuutorina tulevana syksynä.',
+      'Toimin tänä vuonna varapuheenjohtajana Helsingin yliopiston ylioppilaskunnan tapahtumavaliokunnassa. Osallistun oman ainejärjestöni TKO-äly ry:n toiminnan järjestämiseen. Lisäksi tulen syksyllä tuutoroimaan laitoksemme uusia opiskelijoita.',
       'Kaunialan sairaala',
       'Työskentelin sairaala-apulaisena kesällä 2016 ja 2017.'
     ]
