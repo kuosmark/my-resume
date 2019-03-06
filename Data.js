@@ -13,7 +13,7 @@ const Data = {
     ],
     experience: [
       'Student organizations',
-      'I am the vice-chairman of the Events Committee of the Student Union of the University of Helsinki this year. I participate in organizing the activity of my subject organization TKO-äly ry. This fall I will also be tutoring the new students of our faculty.',
+      'I am the vice-chairman of the Events Committee of the Student Union of the University of Helsinki this year. I also participate in organizing the activity of my subject organization TKO-äly ry.',
       'Software development project',
       'We developed working software according to client requirements in a six-person Scrum team as part of a software engineering course. During four sprints I became familiar with client meetings, backlog maintenance, retrospectives and other principles of agile development.',
       'Kauniala hospital',
@@ -34,7 +34,7 @@ const Data = {
     ],
     experience: [
       'Opiskelijajärjestöt',
-      'Toimin tänä vuonna varapuheenjohtajana Helsingin yliopiston ylioppilaskunnan tapahtumavaliokunnassa. Osallistun oman ainejärjestöni TKO-äly ry:n toiminnan järjestämiseen. Lisäksi tulen syksyllä tuutoroimaan laitoksemme uusia opiskelijoita.',
+      'Toimin tänä vuonna varapuheenjohtajana Helsingin yliopiston ylioppilaskunnan tapahtumavaliokunnassa. Osallistun myös oman ainejärjestöni TKO-äly ry:n toiminnan järjestämiseen.',
       'Ohjelmistoprojekti',
       'Kehitimme ohjelmistotuotannon kurssilla kuuden hengen Scrum-tiimillä asiakkaan vaatimusten mukaisen ohjelmiston. Neljän sprintin aikana tutuiksi tulivat asiakastapaamiset, backlogin ylläpito, retrospektiivit ja muut ketterän kehityksen perusteet.',
       'Kaunialan sairaala',
