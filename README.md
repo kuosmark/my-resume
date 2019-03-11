@@ -1,2 +1,2 @@
 # My Resume
-[My online resume back-end](https://kuosmanen.herokuapp.com)
+[My online resume](https://kuosmanen.herokuapp.com)
